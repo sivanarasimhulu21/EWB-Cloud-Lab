@@ -322,6 +322,8 @@ aws-vpc-peering-project/
 ---
 
 **Author:** Chittiboina Siva Narasimhulu
+
 **Project:** AWS VPC Peering — Private Communication Between Two VPCs  
+
 **Region:** `ap-south-1` (Mumbai)
 
