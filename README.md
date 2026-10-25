@@ -44,17 +44,17 @@ The lab also demonstrates the role of a bastion host as an administrative entry 
                 +-----------------+-----------------+
                 |                                   |
        +---------------------+             VPC Peering Connection
-       | VPC A                |          10.10.0.0/16 <-> 10.20.0.0/16
-       | 10.10.0.0/16         |                       |
+       | VPC A               |          10.10.0.0/16 <-> 10.20.0.0/16
+       | 10.10.0.0/16        |                       |
        |                     |                       |
-       | App-A                |                       |
-       | 10.10.2.10            |                       |
-       | Private subnet       |                       |
+       | App-A               |                       |
+       | 10.10.2.10          |                       |
+       | Private subnet      |                       |
        +---------------------+                       |
                                                      |
                                          +------------------------+
                                          | VPC B                  |
-                                         | 10.20.0.0/16            |
+                                         | 10.20.0.0/16           |
                                          |                        |
                                          | App-B                  |
                                          | 10.20.1.10             |
@@ -223,7 +223,7 @@ Run on App-A:
 ping -c 4 10.20.1.10
 ```
 
-**Expected successful output (illustrative only):**
+**Successful output:**
 
 ```text
 PING 10.20.1.10 (10.20.1.10) 56(84) bytes of data.
@@ -244,7 +244,7 @@ Run on App-B:
 ping -c 4 10.10.2.10
 ```
 
-**Expected successful result (illustrative only):** four replies and `0% packet loss`.
+**Successful result:** four replies and `0% packet loss`.
 
 ### Actual lab result
 
@@ -308,7 +308,7 @@ Recommended structure:
 ```text
 aws-vpc-peering-project/
 ├── README.md
-└── screenshots/
+└──
     ├── 01-vpc-overview.png
     ├── 02-vpc-peering.png
     ├── 03-vpc-a-private-routes.png
@@ -323,8 +323,7 @@ aws-vpc-peering-project/
 
 ---
 
-**Author:** `Your Name`  
+**Author:** Chittiboina Siva Narasimhulu
 **Project:** AWS VPC Peering — Private Communication Between Two VPCs  
 **Region:** `ap-south-1` (Mumbai)
 
-> Before publishing, replace `Your Name`, add genuine screenshots, verify the actual resource names and IP addresses, and keep the test status accurate. Do not upload PEM files or credentials.
