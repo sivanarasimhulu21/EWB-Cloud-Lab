@@ -271,9 +271,7 @@ Replace the placeholders below with your own genuine AWS console screenshots. Do
 
 Example Markdown for adding a screenshot:
 
-```markdown
-![VPC peering connection](02-vpc-peering.png)
-```
+
 
 ## Cleanup and Cost Control
 
